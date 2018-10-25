@@ -19,5 +19,3 @@ class ViewController: UIViewController {
     footerView.topAnchor.constraint(equalTo: textView.textContainerLayoutGuide.bottomAnchor).isActive = true
   }
 }
-
-
