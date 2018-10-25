@@ -7,18 +7,17 @@
 //
 
 import UIKit
+import TextContainerLayoutGuide
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+  @IBOutlet private weak var textView: UITextView!
+  @IBOutlet private weak var footerView: UIView!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    footerView.topAnchor.constraint(equalTo: textView.textContainerLayoutGuide.bottomAnchor).isActive = true
+  }
 }
+
 

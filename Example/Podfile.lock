@@ -1,0 +1,16 @@
+PODS:
+  - TextContainerLayoutGuide (0.1.0)
+
+DEPENDENCIES:
+  - TextContainerLayoutGuide (from `../`)
+
+EXTERNAL SOURCES:
+  TextContainerLayoutGuide:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TextContainerLayoutGuide: 2df60c333355cb4fda46a4e119e476f0ccb96aa5
+
+PODFILE CHECKSUM: b965fb64b78a5025a1fdf1f3f580b61e3c5c644c
+
+COCOAPODS: 1.6.0.beta.2
