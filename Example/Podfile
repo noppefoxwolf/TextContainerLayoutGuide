@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TextContainerLayoutGuide_Example' do
+  pod 'TextContainerLayoutGuide', :path => '../'
+
+  target 'TextContainerLayoutGuide_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
