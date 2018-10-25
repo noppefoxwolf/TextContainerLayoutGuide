@@ -11,7 +11,7 @@ import TextContainerLayoutGuide
 
 class ViewController: UIViewController {
   @IBOutlet private weak var textView: UITextView!
-  @IBOutlet private weak var footerView: UIView!
+  @IBOutlet private weak var footerView: UILabel!
   
   override func viewDidLoad() {
     super.viewDidLoad()

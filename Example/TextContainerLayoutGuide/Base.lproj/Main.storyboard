@@ -22,33 +22,34 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g8X-sx-tep">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="87.5" y="20" width="200" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="BA3-ng-dub"/>
+                                    <constraint firstAttribute="height" constant="300" id="ccA-hr-xly"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7m-GE-rH2">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="cq7-qI-nf0"/>
-                                    <constraint firstAttribute="height" constant="128" id="xnF-R8-N1q"/>
-                                </constraints>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FooterLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwk-sM-c3k">
+                                <rect key="frame" x="0.0" y="20" width="92" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="g8X-sx-tep" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="4jV-MD-BMG"/>
-                            <constraint firstItem="z7m-GE-rH2" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" placeholder="YES" id="7rb-LP-ZGL"/>
-                            <constraint firstItem="z7m-GE-rH2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="EsT-HG-jDx"/>
-                            <constraint firstAttribute="trailing" secondItem="g8X-sx-tep" secondAttribute="trailing" id="MDT-Ag-QOJ"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="g8X-sx-tep" secondAttribute="bottom" id="N23-Cx-tF8"/>
-                            <constraint firstItem="g8X-sx-tep" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="dX4-S6-Iph"/>
+                            <constraint firstItem="g8X-sx-tep" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="24X-ta-V1H"/>
+                            <constraint firstItem="Lwk-sM-c3k" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" placeholder="YES" id="8cN-Z3-fzZ"/>
+                            <constraint firstItem="Lwk-sM-c3k" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="LDa-0u-zJR"/>
+                            <constraint firstItem="g8X-sx-tep" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="h9A-Hw-kMY"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="footerView" destination="z7m-GE-rH2" id="rvp-0s-W2n"/>
+                        <outlet property="footerView" destination="Lwk-sM-c3k" id="Qg9-5F-IB5"/>
                         <outlet property="textView" destination="g8X-sx-tep" id="fDJ-fb-kYh"/>
                     </connections>
                 </viewController>
