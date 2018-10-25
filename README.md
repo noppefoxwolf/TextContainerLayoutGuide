@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/TextContainerLayoutGuide.svg?style=flat)](https://cocoapods.org/pods/TextContainerLayoutGuide)
 [![Platform](https://img.shields.io/cocoapods/p/TextContainerLayoutGuide.svg?style=flat)](https://cocoapods.org/pods/TextContainerLayoutGuide)
 
+![](https://github.com/noppefoxwolf/TextContainerLayoutGuide/blob/master/Meta/demo.gif)
+
 # How to use it
 
 Simply constrain your views to the TextContainerLayoutGuide's anchors.
