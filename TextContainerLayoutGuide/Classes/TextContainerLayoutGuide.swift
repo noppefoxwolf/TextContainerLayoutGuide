@@ -82,7 +82,7 @@ public class TextContainerLayoutGuide: UILayoutGuide {
     guard caretRect.origin.y.isFinite else { return }
     
     heightConstraint?.constant = caretRect.minY + caretRect.height - textView.textContainerInset.top
-    widthConstraint?.constant = textView.bounds.width - textView.textContainerInset.right
+    widthConstraint?.constant = textView.bounds.width - textView.textContainerInset.right - textView.textContainerInset.left
     topConstraint?.constant = -textView.contentOffset.y * 2 + textView.textContainerInset.top
     leftConstraint?.constant = -textView.contentOffset.x * 2 + textView.textContainerInset.left
     
